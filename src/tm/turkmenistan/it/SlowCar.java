@@ -2,7 +2,7 @@ package tm.turkmenistan.it;
 
 public class SlowCar extends Car {
 
-	private static final String SLOW_CAR_IMAGE_FILE = "SlowCar.gif";
+	private static final String SLOW_CAR_IMAGE_FILE = "Slowcar.gif";
 
 	private static final int MIN_SPEED_SLOW_CAR = 2;
 	private static final int MAX_SPEED_SLOW_CAR = 5;

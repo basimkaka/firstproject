@@ -2,7 +2,7 @@ package tm.turkmenistan.it;
 
 public class FastCar extends Car {
 
-	private static final String FAST_CAR_IMAGE_FILE = "FastCar.gif";
+	private static final String FAST_CAR_IMAGE_FILE = "Fastcar.gif";
 
 	private static final int MIN_SPEED_FAST_CAR = 2;
 	private static final int MAX_SPEED_FAST_CAR = 10;
