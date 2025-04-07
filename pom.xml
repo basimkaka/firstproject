@@ -1,81 +1,121 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- Версия модели POM -->
 	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Уникальный идентификатор группы проекта -->
 	<groupId>de.tum.in.ase.eist</groupId>
+
+	<!-- Название артефакта (проекта) -->
 	<artifactId>L02E03-Bumpers-Sprint-2-Exercise</artifactId>
+
+	<!-- Тип сборки (jar, war и т.д.) -->
 	<packaging>jar</packaging>
+
+	<!-- Версия проекта -->
 	<version>2.0</version>
+
+	<!-- Человеческое название проекта -->
 	<name>L02E03 Bumpers Sprint 2 Exercise</name>
+
+	<!-- Свойства проекта -->
 	<properties>
+		<!-- Кодировка исходников -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<!-- Зависимости проекта -->
 	<dependencies>
+		<!-- JavaFX Controls (кнопки, текстовые поля и т.д.) -->
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
 			<version>16</version>
 		</dependency>
+
+		<!-- JavaFX FXML (работа с .fxml файлами интерфейса) -->
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-fxml</artifactId>
 			<version>16</version>
 		</dependency>
+
+		<!-- JavaFX Media (работа с видео и аудио) -->
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-media</artifactId>
 			<version>16</version>
 		</dependency>
 	</dependencies>
+
 	<build>
+		<!-- Путь к исходному коду -->
 		<sourceDirectory>${project.basedir}/src</sourceDirectory>
+
+		<!-- Путь к ресурсам (например, изображения, звуки и т.д.) -->
 		<resources>
 			<resource>
 				<directory>${project.basedir}/resources</directory>
 			</resource>
 		</resources>
+
+		<!-- Плагины сборки -->
 		<plugins>
+
+			<!-- Плагин компиляции Java -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
+					<!-- Версия исходного и целевого Java -->
 					<source>16</source>
 					<target>16</target>
 				</configuration>
 			</plugin>
+
+			<!-- Плагин для копирования ресурсов -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.1.0</version>
 				<executions>
 					<execution>
 						<id>copy-resources</id>
+						<!-- Фаза выполнения -->
 						<phase>validate</phase>
+						<!-- Цель (goal) плагина -->
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
+						<!-- Конфигурация: куда копировать и откуда -->
 						<configuration>
 							<outputDirectory>${basedir}/target</outputDirectory>
 							<resources>
 								<resource>
 									<directory>resources</directory>
-									<filtering>true</filtering>
+									<filtering>true</filtering> <!-- Разрешить подстановку переменных -->
 								</resource>
 							</resources>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
+
+			<!-- Плагин сборки jar-файла со всеми зависимостями -->
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<!-- mvn clean compile assembly:single -->
+				<!-- Команда для сборки: mvn clean compile assembly:single -->
 				<version>3.3.0</version>
 				<configuration>
 					<archive>
 						<manifest>
+							<!-- Главный класс для запуска -->
 							<mainClass>de.tum.in.ase.eist.Bumpers</mainClass>
 						</manifest>
 					</archive>
+					<!-- Используем стандартную сборку jar с зависимостями -->
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
