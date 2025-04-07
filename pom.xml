@@ -112,7 +112,7 @@
 					<archive>
 						<manifest>
 							<!-- Главный класс для запуска -->
-							<mainClass>de.tum.in.ase.eist.Bumpers</mainClass>
+							<mainClass>tm.turkmenistan.it.Bumpers</mainClass>
 						</manifest>
 					</archive>
 					<!-- Используем стандартную сборку jar с зависимостями -->

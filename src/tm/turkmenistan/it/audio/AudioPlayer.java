@@ -1,4 +1,4 @@
-package de.tum.in.ase.eist.audio;
+package tm.turkmenistan.it.audio;
 
 import java.net.URL;
 

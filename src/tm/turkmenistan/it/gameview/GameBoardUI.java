@@ -1,16 +1,16 @@
-package de.tum.in.ase.eist.gameview;
+package tm.turkmenistan.it.gameview;
 
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import de.tum.in.ase.eist.Car;
-import de.tum.in.ase.eist.Dimension2D;
-import de.tum.in.ase.eist.GameBoard;
-import de.tum.in.ase.eist.Point2D;
-import de.tum.in.ase.eist.audio.AudioPlayer;
-import de.tum.in.ase.eist.usercontrol.MouseSteering;
+import tm.turkmenistan.it.Car;
+import tm.turkmenistan.it.Dimension2D;
+import tm.turkmenistan.it.GameBoard;
+import tm.turkmenistan.it.Point2D;
+import tm.turkmenistan.it.audio.AudioPlayer;
+import tm.turkmenistan.it.usercontrol.MouseSteering;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;

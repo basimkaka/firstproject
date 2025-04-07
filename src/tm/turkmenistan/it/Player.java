@@ -1,4 +1,4 @@
-package de.tum.in.ase.eist;
+package tm.turkmenistan.it;
 
 /**
  * This class defines the player. Each player has its own car.

@@ -1,9 +1,9 @@
-package de.tum.in.ase.eist;
+package tm.turkmenistan.it;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import de.tum.in.ase.eist.audio.AudioPlayerInterface;
+import tm.turkmenistan.it.audio.AudioPlayerInterface;
 
 /**
  * Creates all car objects, detects collisions, updates car positions, notifies

@@ -1,4 +1,4 @@
-package de.tum.in.ase.eist.gameview;
+package tm.turkmenistan.it.gameview;
 
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;

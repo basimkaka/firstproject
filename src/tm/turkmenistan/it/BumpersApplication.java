@@ -1,7 +1,7 @@
-package de.tum.in.ase.eist;
+package tm.turkmenistan.it;
 
-import de.tum.in.ase.eist.gameview.GameBoardUI;
-import de.tum.in.ase.eist.gameview.GameToolBar;
+import tm.turkmenistan.it.gameview.GameBoardUI;
+import tm.turkmenistan.it.gameview.GameToolBar;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;

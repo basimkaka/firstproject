@@ -1,4 +1,4 @@
-package de.tum.in.ase.eist.audio;
+package tm.turkmenistan.it.audio;
 
 /**
  * This interface specifies the handling of the music and sounds played during

@@ -1,8 +1,8 @@
-package de.tum.in.ase.eist.usercontrol;
+package tm.turkmenistan.it.usercontrol;
 
-import de.tum.in.ase.eist.Car;
-import de.tum.in.ase.eist.Point2D;
-import de.tum.in.ase.eist.gameview.GameBoardUI;
+import tm.turkmenistan.it.Car;
+import tm.turkmenistan.it.Point2D;
+import tm.turkmenistan.it.gameview.GameBoardUI;
 import javafx.scene.input.MouseEvent;
 
 /**

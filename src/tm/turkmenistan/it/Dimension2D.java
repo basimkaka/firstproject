@@ -1,4 +1,4 @@
-package de.tum.in.ase.eist;
+package tm.turkmenistan.it;
 
 import java.util.Locale;
 import java.util.Objects;
